@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GallereeMvp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,143 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsp-Mc-s4U">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Timeline" id="j29-AR-iNj">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="YsU-mQ-GX6">
+                                            <connections>
+                                                <segue destination="Ndb-qa-RTb" kind="show" id="mr0-yz-T1q"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RH7-nK-SQ3">
+                                            <connections>
+                                                <segue destination="bXf-P0-biW" kind="show" id="VvO-43-nV1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jsp-Mc-s4U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9Gu-D5-9mm"/>
+                            <constraint firstItem="jsp-Mc-s4U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="BSZ-se-Y3c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jsp-Mc-s4U" secondAttribute="trailing" constant="-20" id="ZuM-1M-81A"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Ppr-bV-lOP" id="raH-vJ-baf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Ppr-bV-lOP">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="qYI-4w-bt0"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="u5d-nW-9vJ"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="vf8-zD-NXV"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="565-Oz-SSX"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="176" y="336"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TS2-et-8V8">
+            <objects>
+                <viewController id="Ndb-qa-RTb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dLA-Lf-BE8"/>
+                        <viewControllerLayoutGuide type="bottom" id="ush-Rb-DK3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QV2-Vh-iWY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC1-am-vi1">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Search" id="7Uz-hC-VcM">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Ucl-qx-tMW"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fIr-IH-uCZ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iC1-am-vi1" firstAttribute="top" secondItem="dLA-Lf-BE8" secondAttribute="bottom" id="GiA-eH-d8Q"/>
+                            <constraint firstItem="fIr-IH-uCZ" firstAttribute="top" secondItem="iC1-am-vi1" secondAttribute="bottom" id="KQd-e0-6Qi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iC1-am-vi1" secondAttribute="trailing" constant="-20" id="ZcZ-eX-lzJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fIr-IH-uCZ" secondAttribute="trailing" constant="-20" id="dfz-DN-9O7"/>
+                            <constraint firstItem="iC1-am-vi1" firstAttribute="leading" secondItem="QV2-Vh-iWY" secondAttribute="leadingMargin" constant="-20" id="hRj-qe-63c"/>
+                            <constraint firstItem="fIr-IH-uCZ" firstAttribute="leading" secondItem="QV2-Vh-iWY" secondAttribute="leadingMargin" constant="-20" id="kjd-Ce-TT2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cD0-xl-jsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="60"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GO5-6v-bsK">
+            <objects>
+                <viewController id="bXf-P0-biW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q0D-cu-agN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ibr-vc-w8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IS0-eB-xhO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyd-d4-NT7">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="New Moment" id="t8m-SO-g01">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yMQ-OD-ofX"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="85H-VS-ao8"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bly-8u-5J1">
+                                <rect key="frame" x="150" y="116" width="430" height="113"/>
+                                <date key="date" timeIntervalSinceReferenceDate="490140477.256015">
+                                    <!--2016-07-13 22:07:57 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDE-AA-e8t">
+                                <rect key="frame" x="20" y="122" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hB-Zh-o7E">
+                                <rect key="frame" x="20" y="78" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-Xy-VYZ">
+                                <rect key="frame" x="20" y="243" width="130" height="127"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                                <state key="normal" title="[+]"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qyd-d4-NT7" secondAttribute="trailing" constant="-20" id="SoB-dl-Fnh"/>
+                            <constraint firstItem="qyd-d4-NT7" firstAttribute="leading" secondItem="IS0-eB-xhO" secondAttribute="leadingMargin" constant="-20" id="jCS-bj-0cK"/>
+                            <constraint firstItem="qyd-d4-NT7" firstAttribute="top" secondItem="Q0D-cu-agN" secondAttribute="bottom" id="vfa-Lj-jVd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzw-ET-cH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="759"/>
         </scene>
     </scenes>
 </document>
