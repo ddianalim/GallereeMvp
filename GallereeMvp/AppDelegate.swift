@@ -7,12 +7,29 @@
 //
 
 import UIKit
+//import Parse
+
+//import FBSDKCoreKit
+import ParseUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // Set up the Parse SDK
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "galleree"
+            $0.server = "https://gallereedash.herokuapp.com/parse"
+        }
+        Parse.initializeWithConfiguration(configuration)
+        
+        let acl = PFACL()
+        acl.publicReadAccess = true
+        PFACL.setDefaultACL(acl, withAccessForCurrentUser: true)
+        
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

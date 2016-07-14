@@ -101,7 +101,7 @@
         <!--Add Photo-->
         <scene sceneID="NVB-Wa-ucX">
             <objects>
-                <viewController title="Add Photo" id="Zdo-rc-cmt" sceneMemberID="viewController">
+                <viewController title="Add Photo" id="Zdo-rc-cmt" customClass="PhotoViewController" customModule="GallereeMvp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1AZ-GA-lKX"/>
                         <viewControllerLayoutGuide type="bottom" id="rsQ-sC-Yp8"/>
