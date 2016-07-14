@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01F2AA61D3834B70099015D /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01F2AA51D3834B70099015D /* PhotoTakingHelper.swift */; };
 		F0AB5CB81D359DED009A3C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB5CB71D359DED009A3C90 /* AppDelegate.swift */; };
 		F0AB5CBA1D359DED009A3C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB5CB91D359DED009A3C90 /* ViewController.swift */; };
 		F0AB5CBD1D359DED009A3C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AB5CBB1D359DED009A3C90 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F01F2AA51D3834B70099015D /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		F0AB5CB41D359DED009A3C90 /* GallereeMvp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallereeMvp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AB5CB71D359DED009A3C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AB5CB91D359DED009A3C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				F0AB5CB71D359DED009A3C90 /* AppDelegate.swift */,
 				F0AB5CB91D359DED009A3C90 /* ViewController.swift */,
+				F01F2AA51D3834B70099015D /* PhotoTakingHelper.swift */,
 				F0AB5CBB1D359DED009A3C90 /* Main.storyboard */,
 				F0AB5CBE1D359DED009A3C90 /* Assets.xcassets */,
 				F0AB5CC01D359DED009A3C90 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01F2AA61D3834B70099015D /* PhotoTakingHelper.swift in Sources */,
 				F0AB5CBA1D359DED009A3C90 /* ViewController.swift in Sources */,
 				F0AB5CB81D359DED009A3C90 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +290,7 @@
 				F0AB5CC81D359DED009A3C90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
