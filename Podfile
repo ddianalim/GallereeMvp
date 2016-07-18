@@ -15,17 +15,14 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'GallereeMvp' do
-    pod 'Bond', '4.0.0'
+    pod 'Bond'
     pod 'ConvenienceKit'
     pod 'DateTools'
     pod 'Parse'
-    pod 'ParseFacebookUtilsV4'
     pod 'ParseUI'
 end
 
-target 'MakestagramTests' do
+target 'GallereeMVPUITests' do
     
 end
-
-
 

@@ -9,7 +9,7 @@
 
 import Foundation
 
-import Bond
+/*import Bond
 import ConvenienceKit
 import Parse
 
@@ -87,52 +87,4 @@ class Post : PFObject, PFSubclassing {
             }
         }
     }
-    
-    func fetchLikes() {
-        if (likes.value != nil) {
-            return
-        }
-        
-        ParseHelper.likesForPost(self, completionBlock: { (likes: [PFObject]?, error: NSError?) -> Void in
-            if let error = error {
-                ErrorHandling.defaultErrorHandler(error)
-            }
-            
-            let validLikes = likes?.filter { like in like[ParseHelper.ParseLikeFromUser] != nil }
-            
-            self.likes.value = validLikes?.map { like in
-                let fromUser = like[ParseHelper.ParseLikeFromUser] as! PFUser
-                
-                return fromUser
-            }
-        })
-    }
-    
-    func doesUserLikePost(user: PFUser) -> Bool {
-        if let likes = likes.value {
-            return likes.contains(user)
-        } else {
-            return false
-        }
-    }
-    
-    func toggleLikePost(user: PFUser) {
-        if (doesUserLikePost(user)) {
-            // if image is liked, unlike it now
-            // 1
-            likes.value = likes.value?.filter { $0 != user }
-            ParseHelper.unlikePost(user, post: self)
-        } else {
-            // if this image is not liked yet, like it now
-            // 2
-            likes.value?.append(user)
-            ParseHelper.likePost(user, post: self)
-        }
-    }
-    
-    //MARK: Flagging
-    
-    func flagPost(user: PFUser) {
-        ParseHelper.flagPost(user, post: self)
-    }
-}
+}*/

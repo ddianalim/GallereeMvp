@@ -7,7 +7,7 @@
 //
 
 
-import UIKit
+/*import UIKit
 
 typealias PhotoTakingHelperCallback = UIImage? -> Void
 
@@ -101,3 +101,5 @@ extension PhotoTakingHelper: FilterViewControllerDelegate {
     }
     
 }
+ 
+ */

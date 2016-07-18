@@ -14,6 +14,7 @@
 		F09CB8171D398BA2004632D6 /* CancelPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB8161D398BA2004632D6 /* CancelPopover.swift */; };
 		F09CB81A1D3D484A004632D6 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB8191D3D484A004632D6 /* AddPhotoViewController.swift */; };
 		F09CB81C1D3D4862004632D6 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB81B1D3D4862004632D6 /* DatePicker.swift */; };
+		F09CB81E1D3D5032004632D6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB81D1D3D5032004632D6 /* SearchViewController.swift */; };
 		F0AB5CB81D359DED009A3C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB5CB71D359DED009A3C90 /* AppDelegate.swift */; };
 		F0AB5CBA1D359DED009A3C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB5CB91D359DED009A3C90 /* ViewController.swift */; };
 		F0AB5CBD1D359DED009A3C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AB5CBB1D359DED009A3C90 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		F09CB8161D398BA2004632D6 /* CancelPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPopover.swift; sourceTree = "<group>"; };
 		F09CB8191D3D484A004632D6 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		F09CB81B1D3D4862004632D6 /* DatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		F09CB81D1D3D5032004632D6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F0AB5CB41D359DED009A3C90 /* GallereeMvp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallereeMvp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AB5CB71D359DED009A3C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AB5CB91D359DED009A3C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				F0AB5CB91D359DED009A3C90 /* ViewController.swift */,
 				F0F08AA11D384FA900FBF4C1 /* NewMomentViewController.swift */,
 				F09CB8161D398BA2004632D6 /* CancelPopover.swift */,
+				F09CB81D1D3D5032004632D6 /* SearchViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				F09CB8171D398BA2004632D6 /* CancelPopover.swift in Sources */,
 				F09CB81A1D3D484A004632D6 /* AddPhotoViewController.swift in Sources */,
 				F01F2AA61D3834B70099015D /* PhotoTakingHelper.swift in Sources */,
+				F09CB81E1D3D5032004632D6 /* SearchViewController.swift in Sources */,
 				F0AB5CBA1D359DED009A3C90 /* ViewController.swift in Sources */,
 				F09CB8131D3953C5004632D6 /* Post.swift in Sources */,
 				F0AB5CB81D359DED009A3C90 /* AppDelegate.swift in Sources */,

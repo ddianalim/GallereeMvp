@@ -8,6 +8,7 @@
 
 import Foundation
 
-class CancelPopover : UIBarButtonItem {
+/*class CancelPopover : UIBarButtonItem {
     
 }
+ */

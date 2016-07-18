@@ -9,7 +9,7 @@
         <!--Timeline/Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Timeline/Home" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController title="Timeline/Home" id="BYZ-38-t0r" customClass="ViewController" customModule="GallereeMvp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -35,12 +35,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VI7-cX-N0H">
+                                <rect key="frame" x="184" y="64" width="416" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MnP-MR-T2S">
+                                <rect key="frame" x="95" y="64" width="5" height="536"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="MDI-82-XUa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VI7-cX-N0H" firstAttribute="top" secondItem="jsp-Mc-s4U" secondAttribute="bottom" id="14N-KG-8F3"/>
                             <constraint firstItem="jsp-Mc-s4U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9Gu-D5-9mm"/>
+                            <constraint firstItem="MnP-MR-T2S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="BFg-pa-ZMb"/>
                             <constraint firstItem="jsp-Mc-s4U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="BSZ-se-Y3c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MnP-MR-T2S" secondAttribute="bottom" id="O3o-tm-zEV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VI7-cX-N0H" secondAttribute="trailing" id="Up6-P5-TIP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VI7-cX-N0H" secondAttribute="bottom" id="Vm4-bN-nGk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jsp-Mc-s4U" secondAttribute="trailing" constant="-20" id="ZuM-1M-81A"/>
+                            <constraint firstItem="MnP-MR-T2S" firstAttribute="top" secondItem="jsp-Mc-s4U" secondAttribute="bottom" id="abV-6s-lkX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jU4-BE-dBV"/>
@@ -61,7 +77,7 @@
         <!--Search-->
         <scene sceneID="TS2-et-8V8">
             <objects>
-                <viewController title="Search" id="Ndb-qa-RTb" sceneMemberID="viewController">
+                <viewController title="Search" id="Ndb-qa-RTb" customClass="Search" customModule="GallereeMvp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dLA-Lf-BE8"/>
                         <viewControllerLayoutGuide type="bottom" id="ush-Rb-DK3"/>
@@ -119,7 +135,7 @@
         <!--New Moment-->
         <scene sceneID="GO5-6v-bsK">
             <objects>
-                <viewController title="New Moment" id="bXf-P0-biW" sceneMemberID="viewController">
+                <viewController title="New Moment" id="bXf-P0-biW" customClass="NewMoment" customModule="GallereeMvp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q0D-cu-agN"/>
                         <viewControllerLayoutGuide type="bottom" id="Ibr-vc-w8c"/>
@@ -137,7 +153,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bly-8u-5J1" customClass="DatePicker" customModule="GallereeMvp" customModuleProvider="target">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bly-8u-5J1">
                                 <rect key="frame" x="140" y="119" width="440" height="100"/>
                                 <date key="date" timeIntervalSinceReferenceDate="490140477.256015">
                                     <!--2016-07-13 22:07:57 +0000-->
@@ -148,6 +164,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add some context..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-WT-JYK">
+                                <rect key="frame" x="20" y="229" width="560" height="361"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb6-3g-fTf">
                                 <rect key="frame" x="20" y="119" width="100" height="100"/>
                                 <constraints>
@@ -159,12 +181,6 @@
                                     <segue destination="Zdo-rc-cmt" kind="show" id="u2R-Fh-Goa"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add some context..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-WT-JYK">
-                                <rect key="frame" x="20" y="229" width="560" height="361"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
