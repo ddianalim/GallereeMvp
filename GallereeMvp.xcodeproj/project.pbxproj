@@ -7,18 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE382E271F5CCA50236053E0 /* Pods_GallereeMvp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BAE2C81498CFF9E083C8B8 /* Pods_GallereeMvp.framework */; };
 		F01F2AA61D3834B70099015D /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01F2AA51D3834B70099015D /* PhotoTakingHelper.swift */; };
+		F09CB80B1D394E6C004632D6 /* GallereeMvpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB80A1D394E6C004632D6 /* GallereeMvpUITests.swift */; };
+		F09CB8131D3953C5004632D6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB8121D3953C5004632D6 /* Post.swift */; };
+		F09CB8171D398BA2004632D6 /* CancelPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB8161D398BA2004632D6 /* CancelPopover.swift */; };
+		F09CB81A1D3D484A004632D6 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB8191D3D484A004632D6 /* AddPhotoViewController.swift */; };
+		F09CB81C1D3D4862004632D6 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09CB81B1D3D4862004632D6 /* DatePicker.swift */; };
 		F0AB5CB81D359DED009A3C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB5CB71D359DED009A3C90 /* AppDelegate.swift */; };
 		F0AB5CBA1D359DED009A3C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB5CB91D359DED009A3C90 /* ViewController.swift */; };
 		F0AB5CBD1D359DED009A3C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AB5CBB1D359DED009A3C90 /* Main.storyboard */; };
 		F0AB5CBF1D359DED009A3C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AB5CBE1D359DED009A3C90 /* Assets.xcassets */; };
 		F0AB5CC21D359DED009A3C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AB5CC01D359DED009A3C90 /* LaunchScreen.storyboard */; };
-		F0F08AA01D3840BE00FBF4C1 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F08A9F1D3840BE00FBF4C1 /* AddPhotoViewController.swift */; };
 		F0F08AA21D384FA900FBF4C1 /* NewMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F08AA11D384FA900FBF4C1 /* NewMomentViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F09CB80D1D394E6C004632D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0AB5CAC1D359DEC009A3C90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AB5CB31D359DED009A3C90;
+			remoteInfo = GallereeMvp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		21BAE2C81498CFF9E083C8B8 /* Pods_GallereeMvp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GallereeMvp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC43629E701E0D55F768216E /* Pods-GallereeMvp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallereeMvp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GallereeMvp/Pods-GallereeMvp.debug.xcconfig"; sourceTree = "<group>"; };
 		F01F2AA51D3834B70099015D /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		F09CB8081D394E6C004632D6 /* GallereeMvpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GallereeMvpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09CB80A1D394E6C004632D6 /* GallereeMvpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallereeMvpUITests.swift; sourceTree = "<group>"; };
+		F09CB80C1D394E6C004632D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09CB8121D3953C5004632D6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F09CB8161D398BA2004632D6 /* CancelPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPopover.swift; sourceTree = "<group>"; };
+		F09CB8191D3D484A004632D6 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		F09CB81B1D3D4862004632D6 /* DatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		F0AB5CB41D359DED009A3C90 /* GallereeMvp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallereeMvp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AB5CB71D359DED009A3C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AB5CB91D359DED009A3C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -26,26 +50,72 @@
 		F0AB5CBE1D359DED009A3C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0AB5CC11D359DED009A3C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AB5CC31D359DED009A3C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0F08A9F1D3840BE00FBF4C1 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		F0F08AA11D384FA900FBF4C1 /* NewMomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMomentViewController.swift; sourceTree = "<group>"; };
+		FCC61BBC6007084A73A0BD1D /* Pods-GallereeMvp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallereeMvp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GallereeMvp/Pods-GallereeMvp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F0AB5CB11D359DED009A3C90 /* Frameworks */ = {
+		F09CB8051D394E6C004632D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0AB5CB11D359DED009A3C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE382E271F5CCA50236053E0 /* Pods_GallereeMvp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4098FC5ACA9983B41D74C3F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21BAE2C81498CFF9E083C8B8 /* Pods_GallereeMvp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		926EBAA077731141872854EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC43629E701E0D55F768216E /* Pods-GallereeMvp.debug.xcconfig */,
+				FCC61BBC6007084A73A0BD1D /* Pods-GallereeMvp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F09CB8091D394E6C004632D6 /* GallereeMvpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F09CB80A1D394E6C004632D6 /* GallereeMvpUITests.swift */,
+				F09CB80C1D394E6C004632D6 /* Info.plist */,
+			);
+			path = GallereeMvpUITests;
+			sourceTree = "<group>";
+		};
+		F09CB8181D3D4827004632D6 /* Add Photo View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F09CB8191D3D484A004632D6 /* AddPhotoViewController.swift */,
+				F09CB81B1D3D4862004632D6 /* DatePicker.swift */,
+			);
+			path = "Add Photo View Controller";
+			sourceTree = "<group>";
+		};
 		F0AB5CAB1D359DEC009A3C90 = {
 			isa = PBXGroup;
 			children = (
+				4098FC5ACA9983B41D74C3F0 /* Frameworks */,
 				F0AB5CB61D359DED009A3C90 /* GallereeMvp */,
+				F09CB8091D394E6C004632D6 /* GallereeMvpUITests */,
 				F0AB5CB51D359DED009A3C90 /* Products */,
+				926EBAA077731141872854EC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F0AB5CB41D359DED009A3C90 /* GallereeMvp.app */,
+				F09CB8081D394E6C004632D6 /* GallereeMvpUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +138,7 @@
 				F0AB5CBE1D359DED009A3C90 /* Assets.xcassets */,
 				F0AB5CC01D359DED009A3C90 /* LaunchScreen.storyboard */,
 				F0AB5CC31D359DED009A3C90 /* Info.plist */,
+				F09CB8121D3953C5004632D6 /* Post.swift */,
 			);
 			path = GallereeMvp;
 			sourceTree = "<group>";
@@ -74,9 +146,10 @@
 		F0F08A9E1D38403400FBF4C1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F09CB8181D3D4827004632D6 /* Add Photo View Controller */,
 				F0AB5CB91D359DED009A3C90 /* ViewController.swift */,
-				F0F08A9F1D3840BE00FBF4C1 /* AddPhotoViewController.swift */,
 				F0F08AA11D384FA900FBF4C1 /* NewMomentViewController.swift */,
+				F09CB8161D398BA2004632D6 /* CancelPopover.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -84,13 +157,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F09CB8071D394E6C004632D6 /* GallereeMvpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09CB80F1D394E6C004632D6 /* Build configuration list for PBXNativeTarget "GallereeMvpUITests" */;
+			buildPhases = (
+				F09CB8041D394E6C004632D6 /* Sources */,
+				F09CB8051D394E6C004632D6 /* Frameworks */,
+				F09CB8061D394E6C004632D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F09CB80E1D394E6C004632D6 /* PBXTargetDependency */,
+			);
+			name = GallereeMvpUITests;
+			productName = GallereeMvpUITests;
+			productReference = F09CB8081D394E6C004632D6 /* GallereeMvpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F0AB5CB31D359DED009A3C90 /* GallereeMvp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0AB5CC61D359DED009A3C90 /* Build configuration list for PBXNativeTarget "GallereeMvp" */;
 			buildPhases = (
+				18E379BDD869B51D4D44B989 /* [CP] Check Pods Manifest.lock */,
 				F0AB5CB01D359DED009A3C90 /* Sources */,
 				F0AB5CB11D359DED009A3C90 /* Frameworks */,
 				F0AB5CB21D359DED009A3C90 /* Resources */,
+				50A9DCD3C20266D825B517FD /* [CP] Embed Pods Frameworks */,
+				C1DC6C241F0471575453B9C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,8 +205,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = dianalimnos;
 				TargetAttributes = {
+					F09CB8071D394E6C004632D6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F0AB5CB31D359DED009A3C90;
+					};
 					F0AB5CB31D359DED009A3C90 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9MD5TLEWD4;
 					};
 				};
 			};
@@ -130,11 +229,19 @@
 			projectRoot = "";
 			targets = (
 				F0AB5CB31D359DED009A3C90 /* GallereeMvp */,
+				F09CB8071D394E6C004632D6 /* GallereeMvpUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F09CB8061D394E6C004632D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0AB5CB21D359DED009A3C90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,20 +254,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18E379BDD869B51D4D44B989 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50A9DCD3C20266D825B517FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GallereeMvp/Pods-GallereeMvp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DC6C241F0471575453B9C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GallereeMvp/Pods-GallereeMvp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F09CB8041D394E6C004632D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09CB80B1D394E6C004632D6 /* GallereeMvpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0AB5CB01D359DED009A3C90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09CB8171D398BA2004632D6 /* CancelPopover.swift in Sources */,
+				F09CB81A1D3D484A004632D6 /* AddPhotoViewController.swift in Sources */,
 				F01F2AA61D3834B70099015D /* PhotoTakingHelper.swift in Sources */,
-				F0F08AA01D3840BE00FBF4C1 /* AddPhotoViewController.swift in Sources */,
 				F0AB5CBA1D359DED009A3C90 /* ViewController.swift in Sources */,
+				F09CB8131D3953C5004632D6 /* Post.swift in Sources */,
 				F0AB5CB81D359DED009A3C90 /* AppDelegate.swift in Sources */,
 				F0F08AA21D384FA900FBF4C1 /* NewMomentViewController.swift in Sources */,
+				F09CB81C1D3D4862004632D6 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F09CB80E1D394E6C004632D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0AB5CB31D359DED009A3C90 /* GallereeMvp */;
+			targetProxy = F09CB80D1D394E6C004632D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F0AB5CBB1D359DED009A3C90 /* Main.storyboard */ = {
@@ -182,6 +356,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F09CB8101D394E6C004632D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GallereeMvpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.didilim.GallereeMvpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GallereeMvp;
+			};
+			name = Debug;
+		};
+		F09CB8111D394E6C004632D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GallereeMvpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.didilim.GallereeMvpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GallereeMvp;
+			};
+			name = Release;
+		};
 		F0AB5CC41D359DED009A3C90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -267,29 +463,45 @@
 		};
 		F0AB5CC71D359DED009A3C90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC43629E701E0D55F768216E /* Pods-GallereeMvp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GallereeMvp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.didilim.GallereeMvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		F0AB5CC81D359DED009A3C90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC61BBC6007084A73A0BD1D /* Pods-GallereeMvp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GallereeMvp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.didilim.GallereeMvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F09CB80F1D394E6C004632D6 /* Build configuration list for PBXNativeTarget "GallereeMvpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09CB8101D394E6C004632D6 /* Debug */,
+				F09CB8111D394E6C004632D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F0AB5CAF1D359DEC009A3C90 /* Build configuration list for PBXProject "GallereeMvp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

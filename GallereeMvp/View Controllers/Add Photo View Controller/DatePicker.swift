@@ -1,13 +1,15 @@
 //
-//  NewMomentViewController.swift
+//  DatePicker.swift
 //  GallereeMvp
 //
-//  Created by Diana Lim on 7/14/16.
+//  Created by Diana Lim on 7/18/16.
 //  Copyright © 2016 dianalimnos. All rights reserved.
 //
 
 import Foundation
 
-class NewMoment: UIViewController {
+import UIKit
+
+class DatePicker: UIDatePicker {
     
 }
